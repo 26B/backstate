@@ -9,7 +9,7 @@
 </button>
 @else
 <div x-data="{ selectOpen: false, selected: @entangle($attributes->wire('model')) }" {{ $attributes->merge(['class' => 'relative ' . $attributes->get('classContainer')]) }}>
-    <button x-on:click="selectOpen = !selectOpen" type="button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label" {{ $attributes->merge(['class' => $border.' relative w-full bg-white border-gray-300 shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500 sm:text-sm']) }}>
+    <button x-on:click="selectOpen = !selectOpen" type="button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label" {{ $attributes->merge(['class' => $border.' relative w-full bg-gray-50 border-gray-300 shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500 sm:text-sm']) }}>
         <span class="block truncate" x-text="selected !== null ? $refs['item_' + selected].firstElementChild.textContent.trim() : 'Select'"></span>
         <span class="absolute inset-y-0 right-0 flex items-center pr-1 pointer-events-none" aria-hidden="true">
             <backstate:icon name="solid.selector" size="5" color="gray-400" />

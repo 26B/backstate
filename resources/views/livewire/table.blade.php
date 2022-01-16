@@ -15,7 +15,7 @@
             @endif
                 @if (count($this->getSearchFilters()) > 0)
                 <div class="flex w-1/2">
-                    <backstate:input-menu.select class="bg-gray-50" border="rounded-l-md border border-r-0 focus:border-r" wire:model="searchFilter" :items="$this->getSearchFilters()" />
+                    <backstate:input-menu.select border="rounded-l-md border border-r-0 focus:border-r" wire:model="searchFilter" :items="$this->getSearchFilters()" />
                     <backstate:searchbar wire:model.defer="search" placeholder="{{ $this->getPlaceholder() }}" left-border="border" />
                 </div>
                 @endif
