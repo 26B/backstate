@@ -30,6 +30,8 @@ class Components
                     'stacked-list.item',
                     'table.data-cell',
                     'table.header-cell',
+                    'modal.panel',
+                    'modal.action',
                 ],
                 'livewire' => [
                     'example',
