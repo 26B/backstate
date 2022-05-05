@@ -33,6 +33,10 @@ class Components
                     'modal.panel',
                     'modal.action',
                     'modal.delete-model',
+                    'tabs',
+                    'badge',
+                    'breadcrumbs.breadcrumbs',
+                    'breadcrumbs.element',
                 ],
                 'livewire' => [
                     'example',
