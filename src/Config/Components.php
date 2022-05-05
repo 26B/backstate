@@ -32,6 +32,7 @@ class Components
                     'table.header-cell',
                     'modal.panel',
                     'modal.action',
+                    'modal.delete-model',
                 ],
                 'livewire' => [
                     'example',
