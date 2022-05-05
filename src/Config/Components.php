@@ -33,6 +33,11 @@ class Components
                     'modal.panel',
                     'modal.action',
                     'modal.delete-model',
+                    'tabs',
+                    'badge',
+                    // TODO: Replace `breadcrumbs.breadcrumbs` with an index file and become `breadcrumbs`.
+                    'breadcrumbs.breadcrumbs',
+                    'breadcrumbs.element',
                 ],
                 'livewire' => [
                     'example',
