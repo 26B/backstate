@@ -35,6 +35,7 @@ class Components
                     'modal.delete-model',
                     'tabs',
                     'badge',
+                    // TODO: Replace `breadcrumbs.breadcrumbs` with an index file and become `breadcrumbs`.
                     'breadcrumbs.breadcrumbs',
                     'breadcrumbs.element',
                 ],
