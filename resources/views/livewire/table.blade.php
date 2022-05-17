@@ -8,15 +8,15 @@
                     <div class="text-gray-500 mr-2">
                         {{ __('Results per page:') }}
                     </div>
-                    <backstate:input-menu.select wire:model="perPage" :items="$this->perPageSelect()" />
+                    <x-backstate::input-menu.select wire:model="perPage" :items="$this->perPageSelect()" />
                 </div>
             @else
             <div class="flex justify-end mb-4">
             @endif
                 @if (count($this->getSearchFilters()) > 0)
                 <div class="flex w-1/2">
-                    <backstate:input-menu.select border="rounded-l-md border border-r-0 focus:border-r" wire:model="searchFilter" :items="$this->getSearchFilters()" />
-                    <backstate:searchbar wire:model.defer="search" placeholder="{{ $this->getPlaceholder() }}" left-border="border" />
+                    <x-backstate::input-menu.select class="bg-gray-50" border="rounded-l-md border border-r-0 focus:border-r" wire:model="searchFilter" :items="$this->getSearchFilters()" />
+                    <x-backstate::searchbar wire:model.defer="search" placeholder="{{ $this->getPlaceholder() }}" left-border="border" />
                 </div>
                 @endif
             </div>
@@ -26,7 +26,7 @@
                     <thead class="bg-gray-50">
                         <tr>
                             @foreach ($columns as $key => $column)
-                            <backstate:table.header-cell
+                            <x-backstate::table.header-cell
                                 key="{{ $key }}"
                                 title="{{ $column->getTitle() }}"
                                 isSortable="{{ $column->isSortable() }}"
@@ -48,7 +48,7 @@
                         @foreach ($paginator->items() as $model)
                         <tr>
                             @foreach ($columns as $column)
-                            <backstate:table.data-cell
+                            <x-backstate::table.data-cell
                                 :value="$column->getData($model)"
                                 view="{{ $column->getDataViewComponent() }}"
                                 :extraAttributes="$column->getAttributes('data')"
