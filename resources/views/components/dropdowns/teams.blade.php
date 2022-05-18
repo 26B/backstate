@@ -28,7 +28,7 @@
     <ul class="max-h-60 text-base overflow-auto focus:outline-none sm:text-sm">
         @foreach (Auth::user()->allTeams() as $team)
         <li>
-            <x-switchable-team :team="$team" />
+            <x-backstate::switchable-team :team="$team" />
         </li>
         @endforeach
     </ul>
