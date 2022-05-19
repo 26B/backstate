@@ -1,7 +1,7 @@
 <div x-data="{ selected: @entangle($attributes->wire('model')) }" x-init="selected = !Array.isArray(selected) ? [] : selected;" class="rounded-lg overflow-hidden border border-gray-300 shadow divide-y-2 divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px sm:divide-x-2">
     <div class="max-h-60 p-4 text-base overflow-auto focus:outline-none sm:text-sm">
         @if ($hasSearch)
-        <x-backstate::searchbar class="mb-3" wire:model.defer="{{ $wireSearch }}" placeholder="{{ $searchPlaceholder }}" />
+        <x-backstate::form.searchbar class="mb-3" wire:model.defer="{{ $wireSearch }}" placeholder="{{ $searchPlaceholder }}" />
         @endif
 
         <div class="text-gray-700 font-medium text-sm mb-1">

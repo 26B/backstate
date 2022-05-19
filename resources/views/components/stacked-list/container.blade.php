@@ -3,7 +3,7 @@
     <ul class="divide-y divide-gray-200">
         @foreach ($items as $key => $item)
         <li>
-            <backstate:stacked-list.item view="{{ $itemView }}" key="{{ $key }}" :item="$item" />
+            <x-backstate::stacked-list.item view="{{ $itemView }}" key="{{ $key }}" :item="$item" />
         </li>
         @endforeach
     </ul>

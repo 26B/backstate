@@ -1,6 +1,6 @@
 <?php
 
-namespace TwentySixB\BackState\View\Components\InputMenu;
+namespace TwentySixB\BackState\View\Components\Form\InputMenu;
 
 class Checkbox extends InputMenu
 {
@@ -71,6 +71,6 @@ class Checkbox extends InputMenu
      */
     public function render()
     {
-        return view('backstate::components.input-menu.checkbox');
+        return view('backstate::components.form.input-menu.checkbox');
     }
 }

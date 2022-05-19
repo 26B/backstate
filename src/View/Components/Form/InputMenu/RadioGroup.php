@@ -1,6 +1,6 @@
 <?php
 
-namespace TwentySixB\BackState\View\Components\InputMenu;
+namespace TwentySixB\BackState\View\Components\Form\InputMenu;
 
 class RadioGroup extends InputMenu
 {
@@ -11,6 +11,6 @@ class RadioGroup extends InputMenu
      */
     public function render()
     {
-        return view('backstate::components.input-menu.radio-group');
+        return view('backstate::components.form.input-menu.radio-group');
     }
 }

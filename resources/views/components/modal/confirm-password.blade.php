@@ -15,7 +15,7 @@
             <x-backstate::icon name="solid.shield-exclamation" color="primary-600" />
         </x-slot>
 
-        <x-backstate::input class="mt-2" name="confirmable_password" type="password" placeholder="{{ __('Password') }}"
+        <x-backstate::form.input class="mt-2" name="confirmable_password" type="password" placeholder="{{ __('Password') }}"
             wire:model.defer="confirmablePassword"
             wire:keydown.enter="confirmPassword"
             x-data="{}"

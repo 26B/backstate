@@ -1,6 +1,6 @@
 <?php
 
-namespace TwentySixB\BackState\View\Components;
+namespace TwentySixB\BackState\View\Components\Form;
 
 use Illuminate\View\Component;
 
@@ -29,6 +29,6 @@ class Input extends Component
      */
     public function render()
     {
-        return view('backstate::components.input');
+        return view('backstate::components.form.input');
     }
 }

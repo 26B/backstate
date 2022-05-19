@@ -28,7 +28,7 @@
                 <form x-show="isRenaming" wire:submit.prevent="renameMedia">
                     @csrf
 
-                    <x-backstate::input name="mediaName" wire:model.defer="mediaName" />
+                    <x-backstate::form.input name="mediaName" wire:model.defer="mediaName" />
                     <span class="mt-2 flex-shrink-0 flex justify-end items-end space-x-4">
                         <button x-on:click="isRenaming = false" type="button" class="bg-white rounded-md font-medium text-primary-600 hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
                             {{ __('Cancel') }}

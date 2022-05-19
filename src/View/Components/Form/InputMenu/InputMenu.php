@@ -1,6 +1,6 @@
 <?php
 
-namespace TwentySixB\BackState\View\Components\InputMenu;
+namespace TwentySixB\BackState\View\Components\Form\InputMenu;
 
 use Illuminate\View\Component;
 

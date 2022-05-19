@@ -1,6 +1,6 @@
 <?php
 
-namespace TwentySixB\BackState\View\Components;
+namespace TwentySixB\BackState\View\Components\Modal;
 
 use Illuminate\View\Component;
 
@@ -67,6 +67,6 @@ class ConfirmPassword extends Component
      */
     public function render()
     {
-        return view('backstate::components.confirm-password');
+        return view('backstate::components.modal.confirm-password');
     }
 }

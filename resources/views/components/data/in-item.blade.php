@@ -13,7 +13,7 @@
         @if ($slot->isNotEmpty())
             {{ $slot }}
         @else
-        <x-backstate::input name="{{ $name }}" {{ $attributes }} />
+        <x-backstate::form.input name="{{ $name }}" {{ $attributes }} />
         @if (!empty($help))
         <p class="mt-2 text-sm font-light text-gray-500">
             {{ $help }}

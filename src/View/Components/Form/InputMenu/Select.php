@@ -1,6 +1,6 @@
 <?php
 
-namespace TwentySixB\BackState\View\Components\InputMenu;
+namespace TwentySixB\BackState\View\Components\Form\InputMenu;
 
 class Select extends InputMenu
 {
@@ -11,6 +11,6 @@ class Select extends InputMenu
      */
     public function render()
     {
-        return view('backstate::components.input-menu.select');
+        return view('backstate::components.form.input-menu.select');
     }
 }
