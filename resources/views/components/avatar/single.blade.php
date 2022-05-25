@@ -4,7 +4,6 @@
     'title'     => '',
 ])
 
-{{-- TODO: How to handle sizes / classes --}}
 <div {{ $attributes }}>
     @if ($photo_url)
     <span class="inline-flex items-center justify-center">
