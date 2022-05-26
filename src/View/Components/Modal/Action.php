@@ -44,6 +44,8 @@ class Action extends Component
         $this->additionalInfo = $additionalInfo;
         $this->color = $color;
         $this->title = $title;
+
+        // FIXME: canCancel is not implemented.
         $this->canCancel = $canCancel;
     }
 
