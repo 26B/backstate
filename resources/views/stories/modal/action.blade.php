@@ -6,10 +6,6 @@
         'content'           => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus provident magni voluptate deleniti aliquam tenetur, a unde molestiae quisquam dolores? Explicabo cupiditate atque vero quasi a commodi quia placeat doloribus?',
     ],
     'argTypes' => [
-        // 'title' => [
-        //     'control'     => 'text',
-        //     // 'description' => 'HTML title attribute',
-        // ],
     ],
 ])
 
@@ -26,13 +22,6 @@
 
         <x-slot name="buttons">
             { Button placeholder }
-            {{-- <x-backstate::button.primary dusk="confirm-password-button" wire:click="confirmPassword" wire:loading.attr="disabled">
-                {{ __('Confirm') }}
-            </x-backstate::button.primary>
-
-            <x-backstate::button.white wire:click="stopConfirmingPassword" wire:loading.attr="disabled">
-                {{ __('Cancel') }}
-            </x-backstate::button.white> --}}
         </x-slot>
     </x-backstate::modal.action>
 </div>
