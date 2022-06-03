@@ -24,7 +24,15 @@ class BackStateServiceProvider extends ServiceProvider
             'backstate-views'
         );
 
-        Blade::componentNamespace('TwentySixB\\BackState\\View\\Components', 'backstate');
-        Livewire::component('table', Table::class);
+        $this->callAfterResolving(
+            BladeCompiler::class,
+            function () {
+                Blade::anonymousComponentNamespace('backstate');
+                Blade::componentNamespace('TwentySixB\\BackState\\View\\Components', 'backstate');
+            }
+        );
+
+        // TODO: Review and resolve.
+        // Livewire::component('table', Table::class);
     }
 }
