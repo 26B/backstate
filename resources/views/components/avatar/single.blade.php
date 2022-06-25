@@ -1,15 +1,15 @@
 @props([
     'label'     => '',
-    'photo_url' => null,
+    'photoUrl'  => null,
     'title'     => '',
 ])
 
 <div {{ $attributes }}>
-    @if ($photo_url)
+    @if ($photoUrl)
     <span class="inline-flex items-center justify-center">
     <img
         {{ $attributes->merge(['class' => 'border-2 border-white rounded-full object-cover']) }}
-        src="{{ $photo_url }}"
+        src="{{ $photoUrl }}"
         alt="{{ $title }}"
     />
     </span>

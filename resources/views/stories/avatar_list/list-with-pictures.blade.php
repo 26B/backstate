@@ -22,7 +22,7 @@
         $rows[] = (object) [
             'name'      => "Item {$i}",
             'initials'  => "U{$i}",
-            'photo_url' => 'https://i.pravatar.cc/80?u=' . $i,
+            'photoUrl' => 'https://i.pravatar.cc/80?u=' . $i,
         ];
     }
     $rows = collect($rows);
@@ -37,7 +37,7 @@
         class="h-10 w-10"
         :title="$row->name"
         :label="$row->initials"
-        :photo_url="$row->photo_url"
+        :photoUrl="$row->photoUrl"
     />
     @endforeach
 </x-backstate::avatar.list>

@@ -3,10 +3,10 @@
     'args' => [
         'title'     => 'Rui Sardinha',
         'label'     => 'RS',
-        'photo_url' => 'https://i.pravatar.cc/80',
+        'photoUrl' => 'https://i.pravatar.cc/80',
     ],
     'argTypes' => [
-        'photo_url' => [
+        'photoUrl' => [
             'control'     => 'text',
             'description' => 'URL of the avatar',
         ],
@@ -17,5 +17,5 @@
     class="h-10 w-10"
     :title=$title
     :label=$label
-    :photo_url=$photo_url
+    :photoUrl=$photoUrl
 />
