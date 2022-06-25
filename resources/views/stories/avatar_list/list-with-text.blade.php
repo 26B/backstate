@@ -20,9 +20,9 @@
     $rows = [];
     for ($i=1; $i <= $amount; $i++) {
         $rows[] = (object) [
-            'name'      => "Item {$i}",
-            'initials'  => "U{$i}",
-            'photo_url' => '',
+            'name'     => "Item {$i}",
+            'initials' => "U{$i}",
+            'photoUrl' => '',
         ];
     }
     $rows = collect($rows);
@@ -37,7 +37,7 @@
         class="h-10 w-10"
         :title="$row->name"
         :label="$row->initials"
-        :photo_url="$row->photo_url"
+        :photoUrl="$row->photoUrl"
     />
     @endforeach
 </x-backstate::avatar.list>
