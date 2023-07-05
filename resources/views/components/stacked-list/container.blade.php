@@ -10,6 +10,6 @@
 </div>
 @else
 <div class="text-sm text-gray-900">
-    {{ __('No items selected.') }}
+    {{ __('No items to display.') }}
 </div>
 @endif
